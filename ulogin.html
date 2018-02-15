@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ulogin.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>USER LOGIN PAGE</title>
+</head>
+<body>
+    <div id="head">
+        UNDERSTANDING SHORT TEXTS THROUGH SEMANTIC HASHING AND ENRICHMENT
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li class="dd">
+                <a class = "active" href="javascript:void(0)" class="ddb"><i class="down"></i>USER</a>
+                <div class="ddc">
+                    <a class = "active" href="ulogin.html">LOGIN</a>
+                    <a href="reg.html">REGISTRATION</a>
+                </div>
+            </li>
+            <li><a href="alogin.html">ADMIN</a></li>
+        </ul>
+    </div>
+    <div id="ap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn9Fv2Gm0-__NigCULiq4Q-gveIjzUu1CesUbLW8oIiwvcChi0" id="ai" alt="user panel" size="20px">
+        <h3>USER LOGIN</h3>
+        <div id="left">
+            <form name="ulogin">
+                <div class="text">Username</div><br/><input type="text" name="userid" size="26px"/><br/><br/>
+                <div class="text">Password</div><br/><input type="password" name="pswrd" size="26px"/><br/><br/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Reset"/><br/><br/>
+            </form>
+            
+            <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+                </script>
+        </div>
+        <div id="right">
+            <img src="https://cdn.rohde-schwarz.com/pws/solution/wireless_and_mobile_communications/m2m/IoT-Internet-of-things_teaser.jpg" alt="alo" id="i2">    
+        </div>
+    </div>
+    <div id="foot">
+        <h4>Copyright&copy; 2018 - All rights reserved - Domain name</h4>
+    </div>
+    </body>
+    </html>
+    
